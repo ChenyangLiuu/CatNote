@@ -15,7 +15,7 @@ import com.example.catnote.R;
 
 public class AlarmReceiver extends BroadcastReceiver {
 
-    private String channelId = "Piggy Notes";
+    private String channelId = "cat note";
     private String name = "ChannelName";
     @Override
     public void onReceive(Context context, Intent intent) {

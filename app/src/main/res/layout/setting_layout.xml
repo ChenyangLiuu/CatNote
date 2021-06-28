@@ -15,7 +15,7 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Background"
+        app:title="自定义"
         app:titleTextColor="?attr/titleColor"/>
 
     <LinearLayout
@@ -40,14 +40,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:src="?attr/settingIcon"
+                android:src="?attr/msettingIcon"
                 android:layout_gravity="center"
                 />
             <TextView
                 android:id="@+id/setting_settings_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Settings"
+                android:text="设置"
                 android:textColor="?attr/tvMainColor"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
@@ -80,7 +80,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Add New Tag"
+                android:text="添加标签"
                 android:gravity="center_vertical"
                 android:textColor="?attr/tvMainColor"
                 android:textSize="24dp"

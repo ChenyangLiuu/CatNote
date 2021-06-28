@@ -13,7 +13,7 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         app:titleTextColor="?attr/titleColor"
-        app:title="Settings"
+        app:title="设置"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Night Mode"
+                android:text="@string/pref_night_mode"
                 android:textColor="?attr/tvMainColor"
                 android:textSize="20dp" />
 

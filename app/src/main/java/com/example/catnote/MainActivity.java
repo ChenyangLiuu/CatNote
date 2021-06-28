@@ -236,7 +236,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
                                 @Override
                                 public void onClick(View v) {
                                     new AlertDialog.Builder(com.example.catnote.MainActivity.this)
-                                            .setMessage("All related notes will be tagged as \"no tag\" !")
+                                            .setMessage("All related notes will be tagged as \"无标签\" !")
                                             .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                                 @Override
                                                 public void onClick(DialogInterface dialog, int which) {
@@ -451,8 +451,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
 
 
         }
-        if(temp) myToolbar.setTitle("All Plans");
-        else myToolbar.setTitle("All Notes");
+        if(temp) myToolbar.setTitle("计划");
+        else myToolbar.setTitle("笔记");
     }
 
     public void initPopupView() {
@@ -487,7 +487,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
             editor.commit();
         }
         if (!sharedPreferences.contains("tagListString")) {
-            String s = "no tag_life_study_work_play";
+            String s = "无标签_生活_学习_工作_娱乐";
             editor.putString("tagListString", s);
             editor.commit();
         }
@@ -636,7 +636,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
             case R.id.menu_clear:
                 if(!content_switch.isChecked()) {
                     new AlertDialog.Builder(com.example.catnote.MainActivity.this)
-                            .setMessage("Delete All Notes ?")
+                            .setMessage("确定删除所有笔记吗?")
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -655,7 +655,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
                 }
                 else{
                     new AlertDialog.Builder(com.example.catnote.MainActivity.this)
-                            .setMessage("Delete All Plans ?")
+                            .setMessage("确定删除所有计划?")
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -675,7 +675,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
 
                 break;
             case R.id.refresh:
-                myToolbar.setTitle("All Notes");
+                myToolbar.setTitle("笔记 ");
                 lv.setAdapter(adapter);
                 break;
         }
@@ -902,7 +902,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
             case R.id.lv:
                 final com.example.catnote.Note note = noteList.get(position);
                 new AlertDialog.Builder(com.example.catnote.MainActivity.this)
-                        .setMessage("Do you want to delete this note ?")
+                        .setMessage("确定删除这条笔记吗?")
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -922,7 +922,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
             case R.id.lv_plan:
                 final Plan plan = planList.get(position);
                 new AlertDialog.Builder(com.example.catnote.MainActivity.this)
-                        .setMessage("Do you want to delete this plan ?")
+                        .setMessage("确定删除这条计划吗?")
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -1163,16 +1163,16 @@ public class MainActivity extends BaseActivity implements OnItemClickListener, O
         public void noteNumberAchievement(int num) {
             switch (num) {
                 case 1:
-                    if (noteLevel == 0) announcement("This is your first step!", 1, num);
+                    if (noteLevel == 0) announcement("这是你的第一步!", 1, num);
                     break;
                 case 10:
-                    if (noteLevel == 1) announcement("Keep going, and don't give up", 1, num);
+                    if (noteLevel == 1) announcement("继续，不要放弃", 1, num);
                     break;
                 case 100:
-                    if (noteLevel == 2) announcement("This has been a long way...", 1, num);
+                    if (noteLevel == 2) announcement("还有很长的路要走...", 1, num);
                     break;
                 case 1000:
-                    if (noteLevel == 3) announcement("Final achievement! Well Done!", 1, num);
+                    if (noteLevel == 3) announcement("终于成功了！干的好！", 1, num);
                     break;
             }
 

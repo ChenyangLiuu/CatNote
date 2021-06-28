@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Title"
+            android:text="标题"
             android:textSize="28dp"
             android:singleLine="true"
             android:textColor="?attr/tvMainColor"/>
@@ -26,7 +26,7 @@
             android:id="@+id/tv_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time"
+            android:text="时间"
             android:gravity="center"
             android:textSize="24dp"
             android:textColor="?attr/tvMainColor"/>
@@ -36,7 +36,7 @@
         android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Content"
+        android:text="内容"
         android:textSize="20dp"
         android:textColor="?attr/tvSubColor"
         android:singleLine="true"/>

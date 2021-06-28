@@ -88,7 +88,7 @@ public class EditAlarmActivity extends com.example.catnote.BaseActivity implemen
             @Override
             public void onClick(View v) {
                 if(!canBeSet()) {
-                    Toast.makeText(EditAlarmActivity.this, "Invalid Time", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditAlarmActivity.this, "无效的时间", Toast.LENGTH_SHORT).show();
                 }else if(et.getText().toString().length() + et_title.getText().toString().length() == 0 && openMode == 2){
                     Intent intent1 = new Intent();
                     intent1.putExtra("mode", -1);//nothing new happens.
@@ -97,7 +97,7 @@ public class EditAlarmActivity extends com.example.catnote.BaseActivity implemen
                     overridePendingTransition(R.anim.in_lefttoright, R.anim.out_lefttoright);
                 }
                 else if (et_title.getText().toString().length() == 0) {
-                    Toast.makeText(EditAlarmActivity.this, "Title cannot be empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditAlarmActivity.this, "标题不能为空", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     isTimeChange();
@@ -135,7 +135,7 @@ public class EditAlarmActivity extends com.example.catnote.BaseActivity implemen
             return true;
         } else if( keyCode== KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN){
             if(!canBeSet()) {
-                Toast.makeText(EditAlarmActivity.this, "Invalid Time", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditAlarmActivity.this, "无效的时间", Toast.LENGTH_SHORT).show();
             }else if(et.getText().toString().length() + et_title.getText().toString().length() == 0 && openMode == 2){
                 Intent intent1 = new Intent();
                 intent1.putExtra("mode", -1);//nothing new happens.
@@ -144,7 +144,7 @@ public class EditAlarmActivity extends com.example.catnote.BaseActivity implemen
                 overridePendingTransition(R.anim.in_lefttoright, R.anim.out_lefttoright);
             }
             else if (et_title.getText().toString().length() == 0) {
-                Toast.makeText(EditAlarmActivity.this, "Title cannot be empty", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditAlarmActivity.this, "标题不能为空", Toast.LENGTH_SHORT).show();
             }
             else {
                 isTimeChange();
@@ -188,7 +188,7 @@ public class EditAlarmActivity extends com.example.catnote.BaseActivity implemen
         switch (item.getItemId()){
             case R.id.delete:
                 new AlertDialog.Builder(EditAlarmActivity.this)
-                        .setMessage("Delete this plan ?")
+                        .setMessage("删除这个计划?")
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -318,7 +318,7 @@ public class EditAlarmActivity extends com.example.catnote.BaseActivity implemen
         Log.d(TAG, "canBeSet: " + cur.getTime().toString() + calendar.getTime().toString());
         if(cur.before(calendar)) return true;
         else {
-            Toast.makeText(this, "Invalid Time", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "无效的时间", Toast.LENGTH_SHORT).show();
             return false;
         }
     }

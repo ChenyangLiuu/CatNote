@@ -1,12 +1,13 @@
 <resources>
-    <string name="app_name">Piggy Note</string>
-    <string name="pref_night_summary">Turn on / off night mode</string>
-    <string name="pref_reversesort_summary">Reverse the time order of current items</string>
-    <string name="pref_reversesort">Reverse Time Order</string>
-    <string name="pref_fabcolor_summary">Choose the color of ADD NOTE button</string>
-    <string name="pref_fabcolor">Customize ADD NOTE button</string>
-    <string name="pref_fabplancolor_summary">Choose the color of ADD PLAN button</string>
-    <string name="pref_fabplancolor">Customize ADD PLAN button</string>
-    <string name="pref_notetitle">Note Title Style</string>
-    <string name="pref_notetitle_summary">Set the first line of note as its title</string>
+    <string name="app_name">花猫笔记</string>
+    <string name="pref_night_mode">夜间模式</string>
+    <string name="pref_night_summary">开启 / 关闭夜间模式</string>
+    <string name="pref_reversesort_summary">反转笔记的时间顺序</string>
+    <string name="pref_reversesort">反转时间顺序</string>
+    <string name="pref_fabcolor_summary">选择 添加笔记 按钮的颜色</string>
+    <string name="pref_fabcolor">个性化 添加笔记 按钮</string>
+    <string name="pref_fabplancolor_summary">选择 添加计划 按钮的颜色</string>
+    <string name="pref_fabplancolor">个性化 添加笔记 按钮</string>
+    <string name="pref_notetitle">笔记标题样式</string>
+    <string name="pref_notetitle_summary">设置笔记内容的第一行为标题</string>
 </resources>

@@ -9,6 +9,7 @@
     <attr name="tvMainColor" format="color"/>
     <attr name="tvSubColor" format="color"/>
     <attr name="settingIcon" format="string"/>
+    <attr name="msettingIcon" format="string"/>
     <attr name="spinnerArrow" format="string"/>
     <attr name="renewIcon" format="string"/>
     <attr name="removeTag" format="string"/>

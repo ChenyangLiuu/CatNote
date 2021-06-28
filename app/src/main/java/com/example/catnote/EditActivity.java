@@ -176,7 +176,7 @@ public class EditActivity extends BaseActivity{
         switch (item.getItemId()){
             case R.id.delete:
                 new AlertDialog.Builder(com.example.catnote.EditActivity.this)
-                        .setMessage("Delete this Note ?")
+                        .setMessage("删除这条笔记?")
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

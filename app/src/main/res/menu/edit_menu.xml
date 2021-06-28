@@ -5,7 +5,7 @@
     <item
         android:id="@+id/delete"
         android:icon="?attr/menu_delete"
-        android:title="Delete"
+        android:title="删除"
         app:showAsAction="always"/>
 
 </menu>

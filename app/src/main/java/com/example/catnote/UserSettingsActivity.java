@@ -11,7 +11,8 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 
-import com.example.catnote.Setting.FabColorActivity;
+
+
 
 public class UserSettingsActivity extends BaseActivity {
 
